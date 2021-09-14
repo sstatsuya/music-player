@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script type="module" src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="title">
+                <p>Now Playing</p>
+                <p id="song-name">Moonlike Smile</p>
+            </div>
+            <div id="dics">
+                <img src="assets/song/poster2.png" alt="" id="dics-img" class="rotate">
+            </div>
+            <div id="control">
+                <span>
+                    <img id="control-loop" src="assets/icon/icon-loop.png" alt="" class="control-btn">
+                </span>
+                <span>
+                    <img id="control-prev" src="assets/icon/icon-prev.png" alt="" class="control-btn">
+                </span>
+                <span>
+                    <img id="control-play" src="assets/icon/icon-pause.png" alt="" class="control-btn">
+                </span>
+                <span>
+                    <img id="control-next" src="assets/icon/icon-next.png" alt="" class="control-btn">
+                </span>
+                <span>
+                    <img id="control-mix" src="assets/icon/icon-mix.png" alt="" class="control-btn">
+                </span>
+            </div>
+            <div id="progress">
+                <p id="passed" class="time">00:00</p>
+                <input type="range" id="process" value="0" min="0" max="100" step="1">
+                <p id="remain" class="time">00:00</p>
+            </div>
+            <audio id="audio" hidden></audio>
+        </div>
+        <div id="footer">
+            <div class="song">
+                <div class="song-img">
+                    <img src="assets/song/poster1.png" alt="" class="song-small-poster">
+                </div>
+                <div class="song-info">
+                    <p class="song-name">Moonlike Smile</p>
+                    <p class="song-singer">Mihoyo</p>
+                </div>
+                <div class="song-option">
+                    <img src="assets/icon/icon-option.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
